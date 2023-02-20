@@ -1,0 +1,46 @@
+<!-- Write a programm to show different alerts when defferent button are clicked  -->
+<!-- Create A website which is Capable of storing bookmarks of your favourite websites using href -->
+<!-- Repeat above using event listeners -->
+<!-- Write a javascript program to keep fetching contents of a website every 5 seconds -->
+<!-- Create a glowing  bulb effect using classlist toggle method-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Exercise 9</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="p-2 bg-opacity-10 bg-light">
+  <div id="changeTheme">
+    <button type="button" class="btn btn-outline-primary btn-sm m-1" onclick="buttonClicked('primary')">Primary</button>
+    <button type="button" class="btn btn-outline-secondary btn-sm m-1"
+      onclick="buttonClicked('secondary')">Secondary</button>
+    <button type="button" class="btn btn-outline-success btn-sm m-1" onclick="buttonClicked('success')">Success</button>
+    <button type="button" class="btn btn-outline-danger btn-sm m-1" onclick="buttonClicked('danger')">Danger</button>
+    <button type="button" class="btn btn-outline-warning btn-sm m-1" onclick="buttonClicked('warning')">Warning</button>
+    <button type="button" class="btn btn-outline-info btn-sm m-1" onclick="buttonClicked('info')">Info</button>
+    <button type="button" class="btn btn-outline-dark btn-sm m-1" onclick="buttonClicked('dark')">Dark</button>
+    <button type="button" class="btn btn-outline-light btn-sm m-1 active"
+      onclick="buttonClicked('light')">Light</button>
+  </div>
+
+  <div id="lightBulb" onclick="toggleBulb()">
+    <img src="images/Lightbulb_Off.png" id="bulbOff" />
+    <img src="images/Lightbulb_On.png" id="bulbOn" class="d-none" />
+  </div>
+
+  <script src="script.js"></script>
+
+  <!--
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+    -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
